@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioLayout from "./components/ProfileLayout.jsx";
+import ChatBot from "./components/ChatBot.jsx";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
     // </div>
     <div className="scroll-smooth">
       <PortfolioLayout />
+      <ChatBot />
     </div>
+    
   );
 }
 

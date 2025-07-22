@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from './SideBar';
 import Content from './Content';
 
-const sections = ['about', 'projects', 'contact'];
+const sections = ['about', 'experience','projects'];
 
 const PortfolioLayout = () => {
   const [activeSection, setActiveSection] = useState('about');
