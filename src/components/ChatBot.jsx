@@ -17,14 +17,47 @@ const ChatBot = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleSend = () => {
-    if (!input.trim()) return;
-    setMessages([...messages, { from: 'user', text: input }]);
-    setInput('');
-    setTimeout(() => {
-      setMessages(prev => [...prev, { from: 'bot', text: 'This workflow is still under development ;)' }]);
-    }, 500);
-  };
+  const handleSend = async () => {
+  if (!input.trim()) return;
+
+  const userMessage = { from: 'user', text: input };
+  setMessages(prev => [...prev, userMessage]);
+  setInput('');
+
+  try {
+    const response = await fetch("https://chatbot-me-za96.onrender.com/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: input,
+        history: messages.map(m => ({
+          role: m.from === 'user' ? 'user' : 'assistant',
+          content: m.text
+        }))
+      })
+    });
+
+    const data = await response.json();
+
+    const botMessage = {
+      from: 'bot',
+      text: data.reply[0]  // 👈 your bot's reply
+    };
+
+    setMessages(prev => [...prev, botMessage]);
+
+  } catch (error) {
+    console.error("Error communicating with backend:", error);
+    setMessages(prev => [...prev, {
+      from: 'bot',
+      text: "⚠️ Sorry, something went wrong."
+    }]);
+  }
+};
+
+  
 
   const openChat = () => {
     setOpen(true);
