@@ -23,9 +23,9 @@ const ChatBot = () => {
   const userMessage = { from: 'user', text: input };
   setMessages(prev => [...prev, userMessage]);
   setInput('');
-
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
   try {
-    const response = await fetch("https://chatbot-me-za96.onrender.com/chat", {
+    const response = await fetch(backendUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
