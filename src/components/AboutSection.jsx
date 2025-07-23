@@ -31,12 +31,12 @@ const AboutSection = () => (
 
       {/* Buttons */}
       <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
-        <a
+        {/* <a
           href="#contact"
           className="px-6 py-3 rounded-lg bg-pink-600 hover:bg-pink-700 transition text-white font-semibold shadow-lg"
         >
           Contact Me
-        </a>
+        </a> */}
         <a
           href="mailto:priyarosev949@gmail.com"
           className="flex items-center gap-2 px-5 py-3 rounded-lg border border-pink-500 text-pink-400 hover:bg-pink-600 hover:text-white transition"
