@@ -7,7 +7,7 @@ const experiences = [
     link: "https://github.com/yourusername/ai-resume-refiner",
     date: "Feb 2025 – Present",
     description:
-      "Developing an LLM driven document informaition extraction system to automate the extraction of key information from medical report, enhancing the efficiency of the data recording.",
+      "Developing an LLM driven document information extraction system to automate the extraction of key information from medical report, enhancing the efficiency of the data recording.",
     tech: ["Tranformers", "Gradio", "LangChain", "LLMs"],
   },
   {
