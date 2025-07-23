@@ -2,31 +2,57 @@ import React from "react";
 
 const experiences = [
   {
-    role: "AI Research Intern",
+    role: "Project Intern",
     title: "NYC Department of Mental Health and Hygiene",
     link: "https://github.com/yourusername/ai-resume-refiner",
     date: "Feb 2025 – Present",
     description:
       "An AI-powered tool that refines resumes to better match job descriptions using RAG pipelines and LLMs.",
-    tech: ["React", "Gradio", "LangChain", "LLMs", "ChromaDB"],
+    tech: ["Tranformers", "Gradio", "LangChain", "LLMs"],
   },
   {
     role: "Teaching Assistant",
-    title: "University of XYZ",
+    title: "Columbia University in the City of New York",
     link: "https://github.com/yourusername/smart-job-connector",
-    date: "2025",
+    date: "Jan 2025 – May 2025",
     description:
-      "Helped students master course material while assisting in grading and office hours. Built tools to automate outreach matching.",
-    tech: ["Next.js", "GPT-4", "Puppeteer", "Pinecone"],
+      "Assisted in grading and supporting students in Advanced Spoken Language Processing (Taught by: Prof. Julia Hirschberg), a graduate-level course focused on speech processing techniques and algorithms.",
+    tech: [],
   },
   {
-    role: "Undergraduate Researcher",
-    title: "Cancer Detection Research",
-    link: "#",
-    date: "2024",
+    role: "Student Research Asssistant",
+    title: "Columbia University in the City of New York",
+    link: "https://github.com/yourusername/smart-job-connector",
+    date: "August 2024 – Jan 2025",
     description:
-      "Applied CNNs and transformers to improve early cancer detection accuracy from histopathology images.",
-    tech: ["PyTorch", "Transformers", "OpenCV", "NumPy"],
+      "Integrated a Quantum ESPRESSO-based calculator into a pipeline to compute material properties and utilized these properties to train models like Schnet for accurate prediction of material characteristics, including energies.",
+    tech: ["LLMS", "Pytorch"," Transformers", "OpenCV", "NumPy"],
+  },
+  {
+    role: "Data Analyst Intern",
+    title: "DELL Technologies",
+    link: "#",
+    date: "February 2024-June 2024",
+    description:
+      "Developed web crawlers using Scrapy and Selenium to gather data from competitor websites for market comparison and insights.Converted VBA macros to Python, focusing on automating and segregating data processes.",
+    tech: ["Selenium", "Scrapy", "Python", "Pandas", "VBA"],
+  },
+  {
+    role: "Undergraduate Research Assistant",
+    title: "Bangalore University",
+    link: "#",
+    date: "September 2023 - June 2024",
+    description:
+      "Implemented and trained deep learning models using ResNet50 V2, VGG19, MobileNet V3, and DenseNet201 architectures to detect abnormal cervical cells in the Sipakmed dataset.",
+    tech: ["Python", "TensorFlow", "Keras", "LIME", "OpenCV"],
+  },
+  {
+    role: "Summer Intern",
+    title: "DELL Technologies",
+    link: "#",
+    date: "May 2023 - June 2023",
+    description:"Developed an AI-driven Chatbot that improved user interaction with DELL’s data resources, streamlining access to critical information and enhancing overall data utilization.",
+    tech: ["RASA", "DAX", "NLP", "Machine Learning"],
   },
 ];
 

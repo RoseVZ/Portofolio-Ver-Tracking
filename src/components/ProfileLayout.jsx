@@ -18,7 +18,7 @@ const PortfolioLayout = () => {
         });
       },
       {
-        threshold: 0.6, // 60% in view to count
+        threshold: 0.3, // 60% in view to count
       }
     );
 

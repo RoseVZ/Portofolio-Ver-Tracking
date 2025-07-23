@@ -29,7 +29,7 @@ const Sidebar = ({ activeSection }) => {
     flex-shrink-0 flex flex-col justify-center items-center md:items-start
   "
 >
-  <div className="space-y-8 w-full pl-4">
+  <div className="space-y-8 w-full pl-10">
     {/* Name */}
     <h1 className="text-3xl md:text-5xl font-bold tracking-wide drop-shadow-md text-center md:text-left">
       Priyanka Rose Varghese
@@ -40,7 +40,33 @@ const Sidebar = ({ activeSection }) => {
       <span>{text}</span>
       <Cursor cursorBlinking cursorStyle="|" cursorColor="#ff014f" />
     </h2>
+    <div className="mt-10 text-center md:text-left md:pl-6">
+    <a
+  href="/ResumePriyanka.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 text-pink-400 hover:text-pink-600 font-semibold transition-colors duration-300 text-lg md:text-xl"
+>
+  {/* Larger document icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-7 h-7 md:w-8 md:h-8"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M7 7v10a2 2 0 002 2h6a2 2 0 002-2V9l-6-6H9a2 2 0 00-2 2z"
+    />
+  </svg>
 
+  Resume
+</a>
+
+</div>
     {/* Navigation */}
     <nav className="space-y-6 mt-8 text-center md:text-left md:pl-6 hidden md:block">
       {sections.map(({ id, label }) => (
@@ -69,9 +95,12 @@ const Sidebar = ({ activeSection }) => {
           {label}
         </a>
       ))}
-    </nav>
+        </nav>
+        {/* Separate Resume Link */}
+
   </div>
 </aside>
+
 
   );
 };

@@ -7,7 +7,8 @@ import ExperienceSection from './ExperienceSection';
 
 const Content = () => {
   return (
-    <main className="md:w-2/3 overflow-y-auto p-6 space-y-32 bg-gray-900 text-white">
+    <main className="md:w-2/3 w-full overflow-y-auto overflow-x-hidden p-6 space-y-5 bg-gray-900 text-white">
+
       <section id="about" >
         <AboutSection />
       </section>
@@ -20,9 +21,9 @@ const Content = () => {
         <ProjectsSection />
       </section>
 
-      <section id="contact" className="min-h-screen">
+      {/* <section id="contact" className="min-h-screen">
         <ContactSection />
-      </section>
+      </section> */}
     </main>
   );
 };
