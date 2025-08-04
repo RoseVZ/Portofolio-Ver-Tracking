@@ -23,6 +23,17 @@ const ChatBot = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+  if (open && showWarning) {
+    const timer = setTimeout(() => {
+      setShowWarning(false);
+    }, 8000); // hide after 8 seconds
+
+    return () => clearTimeout(timer);
+  }
+}, [open, showWarning]);
+
+
   const handleSend = async () => {
     if (!input.trim()) return;
 
