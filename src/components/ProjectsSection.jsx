@@ -3,8 +3,18 @@ import deepFakeImage from '../assets/images/projects/DeepFake.png';
 import RCA from '../assets/images/projects/RCA.png';
 import Robojackson from '../assets/images/projects/Robojackson.png';
 import Neuralyst from '../assets/images/projects/Neuralyst.png';
+import Resume from '../assets/images/projects/resume.png';
 
 const projects = [
+   {
+    title: "Agentic Resume Modifier",
+    link: "https://github.com/RoseVZ/Resume_modifier_agent",
+    date: "2025",
+    description:
+      "Built an automated resume optimization pipeline using LangGraph agents to parse job descriptions, select relevant experiences, evaluate via ATS scoring, and update LaTeX resumes.",
+    tech: ["Langgraph", "Gradio","Agentic AI","GPT-4"],
+    image: Resume,
+  },
   {
     title: "DeepFake Detector",
     link: "https://github.com/RoseVZ/DeepFake-Detector",

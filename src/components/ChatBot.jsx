@@ -108,7 +108,7 @@ const ChatBot = () => {
 
           {/* Dialogue box with white background */}
           <div className="bg-white text-gray-900 rounded-lg px-4 py-2 shadow-md font-semibold select-none hidden md:block">
-            Click here! <br /> To know me faster
+            Click here!! <br /> (To know me faster)
           </div>
         </div>
       )}
@@ -135,12 +135,12 @@ const ChatBot = () => {
                 onClick={closeChat}
               />
             </div>
-            {showWarning && (
+            {/* {showWarning && (
               <div className="bg-yellow-400 text-gray-900 text-sm p-2 font-semibold text-center animate-pulse">
                 ⏳ The chatbot may take 30–60 seconds to load due to free
                 hosting. Thanks for your patience!
               </div>
-            )}
+            )} */}
 
             {/* Messages */}
             <div className="flex-1 p-3 overflow-y-auto space-y-2 ">
